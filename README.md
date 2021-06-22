@@ -156,6 +156,7 @@ Komputery, telefony, alarmy, pralki...
 ### Metody kompresji danych
 Kompresja bezstratna, np. kodowanie Huffmana: bajty występujące częściej mają krótszą reprezentację niż te występujące rzadziej.
 Kompresja stratna, może dotyczyć różnych sygnałów (np. dzwięk, obraz), np. transformata falkowa, transformata Fouriera, splot, zmiana rozdzielczości
+(Urządzenia przetwarzania informacji, wykłady, dopełnić odpowiedź, Kod Golomba, Rice'a, PSNR)
 
 ### Sprzętowe środki przyspieszania obliczeń
 - wykorzystanie wielu rdzeni procesora,

@@ -78,7 +78,7 @@ Ze względu na szczegóły implementacyjne:
 ### Rola sterowników w dostępie do baz danych
 Sterownik tłumaczy zapytania zadane przez użytkownika na język zrozumiały dla danego DBMS. Pozwala to na ujednolicenie interfejsu programistycznego komunikacji z systemami bazodanowymi.
 
-### Zarządzanie procesami w systemach operacyjnych
+### Zarządzanie procesami w systemach operacyjnych - 15
 Procesami zarządza planista (scheduler), który jest odpowiedzialny za rozpoczynanie, wznawianie i kończenie procesów oraz przełączanie kontekstu pomiędzy procesami. System operacyjny dostarcza mechanizmy umożliwiające komunikację między procesami oraz synchronizację.
 
 ### Co to jest system komputerowy, informacyjny, informatyczny

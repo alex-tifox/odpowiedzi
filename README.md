@@ -177,7 +177,7 @@ Kompresja stratna, może dotyczyć różnych sygnałów (np. dzwięk, obraz), np
 - rejestr instrukcji
 - inne (np. FPU, pamięć cache)
 
-### Technologie tworzenia stron internetowych
+### Technologie tworzenia stron internetowych - 30
 HTML, XHTML, CSS, JavaScript, PHP...
 
 ### Czym się różnią portal i wortal internetowy

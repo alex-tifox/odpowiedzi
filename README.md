@@ -345,7 +345,7 @@ Uprawnienia dotyczą
 
 Nadawanie plików odbywa się poprzez komendę _chmod_.
 
-### Scharakteryzować sieciowe systemy plików
+### Scharakteryzować sieciowe systemy plików - 60
 p. 41.
 
 ### Co to jest cykl życia oprogramowania i z jakich faz się składa

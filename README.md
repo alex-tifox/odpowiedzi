@@ -526,7 +526,7 @@ Funkcje:
 - teksturowanie, filtracja tekstur,
 - postprocessing,
 
-### Wymienić i scharakteryzować metody przetwarzania obrazów
+### Wymienić i scharakteryzować metody przetwarzania obrazów - 90
 - operacje na histogramie,
 - operacje geometryczne,
 - operacje arytmetyczne/logiczne,

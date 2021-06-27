@@ -394,10 +394,11 @@ p. 64.
 Zakładając język C++, do składowych statycznych odwołanie następuje wg schematu nazwa-klasy::nazwa-składowej lub nazwa-obiektu.nazwa-składowej lub nazwa-wskaźnika->nazwa-składowej. Dla składowych klasy tworzonych dynamicznie tak jak wyżej z pominięciem przypadku z operatorem `::`.
 
 ### Omów pojęcia agregacji i zawierania w diagramach UML
-_Odpowiedź niepewna_
 
 Agregacja oznacza, że obiekty klasy posiadają potencjalnie dzieloną referencję do innego obiektu
 Zawieranie oznacza, że obiekty klasy posiadają na własność inne obiekty, tj. odpowiadają za jego cykl życia.
+Agregacja - to jedna klasa składa się z innych. Obiekty jednej klasy zawierają obiekty innej klasy, np. grupa - student.
+Kompozycja (zawieranie) - silniejsza odmiana agregacji. Jeden komponent może należeć tylko do jednej całości, czas życia komponentu jest zdeterminowany przez czas życia całości. Np. buirko - blat, klawiatura - przycisk.
 
 ### Budowa i zasady działania wybranego urządzenia (drukarka laserowa, dysk twardy, pamięć USB, streamer, etc.)
 p. 49.

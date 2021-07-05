@@ -478,12 +478,20 @@ Narzędzia i środowiska wytwarzania oprogramowania:
 - Eclipse
 - Visual Studio
 - Qt Creator
+- JetBrains family
+- Automation studio
 
 ### Wzorce projektowe i programowe
-Określają pewne schematy postępowania przy projektowaniu systemów bazowanych na obiektach. Podział na wzorce
-- kreacyjne (np. abstrakcyjna fabryka)
-- strukturalne (np. most)
-- behawioralne (np. strategia)
+Określają pewne schematy postępowania przy projektowaniu systemów bazowanych na obiektach, może to być pewień moduł jednolitego systemu, lub całość 
+Wzorce projektowe:
+- kreacyjne - factory, singleton, abstract factory, builder
+- strukturalne - adapter, decorator, proxy
+- behawioralne - iterator, observer, chain of responsibility
+
+Wzorce architektoniczne używane są pod czas projektowania całego systemu i opisania odpowiedzialności składowych systemu:
+- MVC - Model View Controller
+- MVVM - Model View ViewModel
+- MVP - Model View Presenter 
 
 ### Metody podnoszenie niezawodności systemów wbudowanych
 Testowanie, ograniczenie złożoności zadań, rozdzielanie zadań na mniejsze systemy.
@@ -537,7 +545,7 @@ Funkcje:
 - transformacja (na przykład dft).
 
 ### Zasady i metody tworzenia indeksów w bazach danych
-??
+https://en.wikipedia.org/wiki/Database_index#Index_architecture_and_indexing_methods
 
 ### Rodzaje i sposób działania przerzutników
 _Odpowiedź niepełna_

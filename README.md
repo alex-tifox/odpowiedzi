@@ -29,6 +29,9 @@ Urządzenia służące do wydobywania/przekazywania informacji z/do komputera, n
 ### Wymienić i omówić metody wdrażania systemów informatycznych
 _Odpowiedź niepewna (źr. https://pl.wikipedia.org/wiki/Wdro%C5%BCenie_systemu )._
 
+Metody tradycyjne - Waterfall (określony budget, zaplanowane wszystkie etapy działania nad projektem od początku, nie można cofnąć się)
+Metodyki zwinne (agile) - Scrum.
+
 1. Całościowa: stary system jest porzucany i wdrażany jest nowy (wysokie ryzyko, niskie koszty).
 2. Cząstkowa: stopniowe wdrażanie modułów systemu (średnie ryzyko, średnie koszty).
 3. Równoległa: wdrażanie nowego systemu, przy jednoczesnym podtrzymaniu starego (niskie ryzyko, wysokie koszty).
@@ -45,7 +48,7 @@ Obliczenia wykonywane są na wielu komputerach w potencjalnie różnych lokaliza
 ### Porównaj metody analizy obiektowej i strukturalnej w projektowaniu systemów informatycznych
 _Odpowiedź niepewna_
 
-W analizie obiektowej dane i operujące na nich funkcje rozważane są łącznie (diagram klas), w analizie strukturalnej -- osobno (diagram przepływu danych).
+W analizie obiektowej dane i operujące na nich funkcje rozważane są łącznie jako diagram klas, w analizie strukturalnej -- osobno, jako diagram przepływu danych i ciąg pewnych działan wykonywanych nad danymi.
 
 ### Scharakteryzować standardowy język zapytań do baz danych
 SQL: język deklaratywny, pozwala na obsługę baz danych w RDBMS, m.in. tworzenie i usuwanie tabel, dodawanie i usuwanie rekordów, wykonywanie zapytań w celu uzyskania danych spełniających określone warunki.
@@ -80,10 +83,11 @@ Sterownik tłumaczy zapytania zadane przez użytkownika na język zrozumiały dl
 
 ### Zarządzanie procesami w systemach operacyjnych - 15
 Procesami zarządza planista (scheduler), który jest odpowiedzialny za rozpoczynanie, wznawianie i kończenie procesów oraz przełączanie kontekstu pomiędzy procesami. System operacyjny dostarcza mechanizmy umożliwiające komunikację między procesami oraz synchronizację.
+Proces zostaje utworzony przez wywołanie fork() w jednym z istniejących procesów (created, zwane także new). W tym stanie proces oczekuje przejścia do stanu gotowości (ready, zwane także waiting). W tym stanie proces oczekuje na wykonanie (przydzielenie czasu procesora). Kiedy nadejdzie jego czas, przechodzi do stanu wykonywania (running). Zakończenie procesu poprzez wywołanie exit() przenosi go do stanu zakończony (terminated). Jeśli w tym stanie pamięć po procesie nie zostanie zwolniona, proces staje się procesem zombie. Jeśli proces oczekuje na zasoby przechodzi w stan zablokowany (blocked). Proces przejdzie do stanu oczekiwania wyłącznie gdy zasób zostanie zwolniony. Operacja taka może oczywiście prowadzić do zakleszczenia (deadlock).
 
 ### Co to jest system komputerowy, informacyjny, informatyczny
-System komputerowy: sprzęt i oprogramowanie do przetwarzania danych.
-System informacyjny: system, który przetwarza dane w informacje, gromadzi je i przesyła.
+System komputerowy: sprzęt i oprogramowanie do przetwarzania danych.\
+System informacyjny: system, który przetwarza dane w informacje, gromadzi je i przesyła.\
 System informatyczny: część systemu informacyjnego, wykorzystująca system komputerowy.
 
 ### Powody tworzenia systemów rozproszonych
@@ -113,10 +117,10 @@ Ze względu na generację:
 
 Ze względu na paradygmat:
 
-1. deklaratywne, w tym
+1. deklaratywne, w tym - Lisp, Haskell, SQL
 	- logiczne
 	- funkcyjne
-2. imperatywne, w tym
+2. imperatywne, w tym C/C++, Java, C#, PL/SQL
 	- proceduralne
 3. strukturalne, w tym
 	- obiektowe
@@ -142,6 +146,9 @@ Ze względu na paradygmat:
 - siatki: zawiera połączenia nadmiarowe
 
 ### Podstawowe składniki sprzętowe w sieciach komputerowych
+Urządzenia transmisj
+Urządzenia dostępu
+Urządzenia wzmacniania
 1. Terminal,
 2. karta sieciowa,
 3. modem,
@@ -149,6 +156,7 @@ Ze względu na paradygmat:
 5. router,
 6. hub,
 7. most
+8. bramy sieciowe
 
 ### Zastosowania mikroprocesorów
 Komputery, telefony, alarmy, pralki...
@@ -176,6 +184,16 @@ Kompresja stratna, może dotyczyć różnych sygnałów (np. dzwięk, obraz), np
 - licznik programu
 - rejestr instrukcji
 - inne (np. FPU, pamięć cache)
+
+1. układ sterowania i synchronizacji, który kontroluje pracę procesora i
+wytwarza sygnały potrzebne do sterowania niektórymi elementami komputera.
+2. arytmometr, czyli układ, który wykonuje operacje arytmetyczne i
+logiczne (niektóre procesory mają kilka arytmometrów). - ALU
+3. rejestry, układy pamięci.
+4. wbudowana pamięć podręczna cache, która działa podobnie do
+zewnętrznej pamięci RAM. Zapewnia ona, że procesor nie jest zmuszony czekać na
+dane potrzebne mu do pracy.
+5. wewnętrzne szyny łączące elementy procesora.
 
 ### Technologie tworzenia stron internetowych - 30
 HTML, XHTML, CSS, JavaScript, PHP...
@@ -230,8 +248,11 @@ TCP zapewnia niezmienioną (zachowana kolejność) i pełną (wszystkie pakiety 
 
 ### Rodzaje światłowodów
 _Odpowiedź niepewna_
+Materiał
 - plastikowy: tani, małe prędkości, małe odległości
 - krzemiankowy: nieco lepszy niż plastikowy
+
+Modowość
 - jednomodowy: bardzo drogi, duże odległości, trudny w obsłudze
 - wielomodoy: drogi, średnie odległości
 
@@ -277,6 +298,8 @@ Cechy to:
 - RAID 5: jak w RAID 0, suma kontrolna rozproszona po wszystkich dyskach, zwiększona niezawodność, szybki odczyt, wolny zapis
 - RAID 6: jak w RAID 5, dodatkowa suma kontrolna, zwiększona niezawodność
 
+Stosująsię głównie w firmach, gdzie jest potrzeba bezpieczeństwa chronionych danych, a również nośniki o dużym stopniu niezawodności
+
 ### Zasada działania systemów klastrowych
 Każdy węzeł klastra dostaje własne zadanie bądź cały klaster pracuje nad tym samym zadaniem. W przypadku awarii jednego węzła, wykonywane przez niego zadanie jest przejmowane przez inny węzeł.
 
@@ -287,8 +310,12 @@ Oparte o bazy wiedzy (zasady jeżeli-to); wspomagają podejmowanie decyzji. Mog�
 LCD: zbudowany z macierzy komórek zawierających ciekły kryształ o kolorowych filtrach. Elektrody wytwarzają pole elektryczne, które wywołuje zmianę cząsteczek ciekłego kryształu, co z kolei powoduje zmianę polaryzacji światła przez nie przechodzącego, a co za tym idzie, ilości przepuszczanego światła. Z tyłu ekranu montowane jest dodatkowe podświetlenie, które ten efekt podkreśla.
 
 ### Wymienić i scharakteryzować rodzaje pamięci półprzewodnikowych
-- RAM: pamięć ulotna, szybka
-- ROM: pamięć nieulotna (dane pozostają pod odłączeniu zasilania), tylko do odczytu -- zapis jest niemożliwy lub odbywa się poprzez dodatkowe procedury lub z wykorzystaniem innego sprzętu.
+- RAM: pamięć ulotna, szybka. pamięć o dostępie swobodnym – przeznaczona do zapisu i odczytu.
+RAM jest pamięcią ulotną, co oznacza, że po wyłączeniu zasilania informacja w niej przechowywana jest
+tracona.
+- ROM: pamięć nieulotna (dane pozostają pod odłączeniu zasilania), tylko do odczytu -- zapis jest niemożliwy lub odbywa się poprzez dodatkowe procedury lub z wykorzystaniem innego sprzętu. (ang. Read Only Memory) – pamięć półprzewodnikowa – pamięć o dostępie swobodnym przeznaczona
+do odczytu. ROM jest pamięcią nieulotną.
+
 
 ### Przedstaw tablice prawdy AND, OR, XOR, zilustruj oznaczenie bramki, wymień przykładowe zastosowanie
 za proste
@@ -300,6 +327,7 @@ Wątek działa w obrębie procesu. Posiada oddzielny stos, jednak część danyc
 
 ### Budowa typowego układu FPGA
 Zbudowany jest z programowalnych bloków logicznych oraz programowalnej macierzy połączeń. Bloki mogą być skomplikowanymi układami lub pojedynczymi bramkami logicznymi. Bloki zawierają również elementy pamięciowe (np. przerzutniki).
+Cechą charakterystyczną architektury FPGA jest duża liczba regularnie rozmieszczonych (wformie matrycy) konfigurowalnych komórek logicznych opartych na tablicach LUT (Look up Table), określanych generatorami funkcji
 
 ### Podstawowe tryby adresowania systemów mikroprocesorowych
 - natychmiastowe: nie ma odniesienia do pamięci w celu pobrania argumentu (instrukcja zawiera dane)
@@ -363,7 +391,7 @@ Ciąg działań projektowo-programowych, obejmujący zakres od powstania zapotrz
 - diagram komponentów
 
 ### Co oznaczają skróty ERD oraz DFD? Do czego się ich używa?
-ERD to diagram związków encji, wykorzystywany do projektowania baz danych.
+ERD to diagram związków encji, wykorzystywany do projektowania baz danych.\
 DFD to diagram przepływu danych, wykorzystywany do projektowania sposobu przetwarzania danych.
 
 ### Przeciążanie funkcji i operatorów w języku C++
@@ -432,7 +460,7 @@ Są to algorytmy, które w każdym kroku podejmują najkorzystniejszą w danym m
 Przykład: ciągły problem plecakowy (znajduje rozwiązanie optymalne), dyskretny problem plecakowy (nie gwarantuje optymalnego rozwiązania).
 
 ### Na czym polega haszowanie i gdzie ma ono zastosowanie?
-Haszowanie to transformacja pewnego obiektu na indeks, w celu umieszczenia go w mapie lub zbiorze haszującym lub w celu szybkiej identyfikacji obiektu.
+Haszowanie to transformacja pewnego obiektu na indeks, w celu umieszczenia go w mapie lub zbiorze haszującym lub w celu szybkiej identyfikacji obiektu. Oprócz wykorzystywania tego w strukturach danych tyou HashMap, gdzie hasz obiektu jest jego kluczem, często jest to używane w celach kryptograficznych, dla podpisywania danych podpisem cyfrowym itd.
 
 ### Co to są problemy obliczeniowo trudne -- podać przykład takiego problemu
 Są to problemy, dla których nie jest znane rozwiązanie o złożoności wielomianowej lub niższej dla rozmiaru danych wejściowych. Przykładem tego problemu jest problem komiwojażera.
@@ -530,9 +558,9 @@ Funkcje:
 - zarządzanie projektem.
 
 ### Wymienić i scharakteryzować podstawowe techniki w grafice komputerowej
-- antyaliasing,
-- oświetlenie, cieniowanie, raytracing, HDR,
-- teksturowanie, filtracja tekstur,
+- antyaliasing, technika stosowana do 'wygładzenia' obrazu wyswietlanego, a mianowicie obiektów na niej wystepujących i ich krawedzi
+- oświetlenie, cieniowanie, raytracing, HDR,, oswietlenie lokalne i globalne
+- teksturowanie (określa w jaki sposób powiązać piksele lub wartość funkcji tekstury proceduralnej z powierzchnią obiektu), filtracja tekstur (poprzez pomniejszenie rodzielczosci tekstury jest potrzeba dobrać wartości tektury tak, aby nie była ona bardzo rozmyta. powiększenie ostrości tekstur),
 - postprocessing,
 
 ### Wymienić i scharakteryzować metody przetwarzania obrazów - 90
@@ -541,7 +569,8 @@ Funkcje:
 - operacje arytmetyczne/logiczne,
 - normalizacja,
 - filtracje,
-- wektoryzacja, rasteryzacja,
+- wektoryzacja, rasteryzacja, Rasteryzacja jest to czynność polegająca na konwersji obrazu opisanego w formie wektorowej na obraz rastrowy (piksele lub kropki) w celu wyświetlenia na urządzeniu wizyjnym, wydrukowania lub w celu zapamiętania w pliku w formacie bitmapowym. Sporadycznie stosowana jest odwrotna konwersja. Najbardziej elementarny algorytm rasteryzacji sceny 3D pobiera ją jako zbiór polygonów, a następnie dokonuje projekcji na powierzchnie 2D. Polygony są reprezentowane jako zbiór trójkątów. Trójkąty są reprezentowane poprzez 3 wierzchołki w przestrzeni 3D. W najprostszym ujęciu urządzenie rasteryzujące pobiera strumień wierzchołków, przekształca je na odpowiadające im dwuwymiarowe punkty i dokonuje wypełnienia kolorem wnętrza odpowiadających im dwuwymiarowym trójkątom. \ 
+- 
 - transformacja (na przykład dft).
 
 ### Zasady i metody tworzenia indeksów w bazach danych
@@ -560,7 +589,7 @@ Wyjścia w automacie Mealy'ego zależą od stanu wewnętrznego i sygnałów wej�
 PAL:
 - programowalna matryca OR i AND,
 - wejścia i wyjścia są jednokierunkowe,
-- możliwe współdzielenie termów przez funkcje wyjściowe.
+- możliwe współdzielenie termów przez funkcje wyjściowe.\
 PLA:
 - programowalna matryca AND, matryca OR stała,
 - dwukierunkowe wejścia i wyjścia,
